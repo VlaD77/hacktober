@@ -6,7 +6,7 @@ int main()
 	cout << "\nHello Vlad77"; 				// output_2
 	
 	cout << "\nHello VaDiK131313";  		// output_3
-	
+	cout << "\nHello new VaDiK1313";  
 	int a; 									// new int variable
 	cout << "\nEnter the number: "; 		// input_1
 	cin >> a; 								// input value to int variable
