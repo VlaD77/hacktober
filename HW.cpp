@@ -42,5 +42,30 @@ int main()
 	for (int index = 0; index < length; ++index)
 		std::cout << array[index] << ' ';
 	
+	int digitals[10]; 
+ 
+  	cout << "\n ENTER 10 VALUES: " << endl;
+ 
+  	for (int i = 0; i < 10; i++) {
+    		cin >> digitals[i]; 
+  	}
+ 
+  	for (int i = 0; i < 10; i++) {
+    		for (int j = 0; j < 9; j++) {
+      			if (digitals[j] > digitals[j + 1]) {
+        			int b = digitals[j]; // tmp
+        			digitals[j] = digitals[j + 1]; // swap places
+        			digitals[j + 1] = b; 
+      			}
+   		 }
+  	}
+ 
+  	cout << "Bubble sort result: ";
+ 
+  	for (int i = 0; i < 10; i++) {
+    		cout << digitals[i] << " "; 
+  	}
+  	system("pause");
+	
     return 0;
 }
